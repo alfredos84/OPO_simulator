@@ -23,13 +23,8 @@ rm cuOPO                             # This removes a previuos executable file (
 nvcc OPO.cu -DTHREE_EQS -DCW_OPO -DPPLN -I /usr/local/include -L /usr/local/include/fftwf3 -lfftw3 -lfftw3f -lm -o OPO
 FOLDERSIM="Simulations"
 
-# There are three flags specific for CUDA compiler:
-# --gpu-architecture=sm_75: please check your GPU card architecture (Ampere, Fermi, Tesla, Pascal, Turing, Kepler, etc) 
-#                           to set the correct number sm_XX. This code was tested using a Nvidia GeForce GTX 1650 card (Turing
-#                           architecture). 
-# 				    Please visit https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gpu-feature-list
-#                           to set the proper flag according to your GPU card.
-# -lcufftw -lcufft        : flags needed to perform cuFFT (the CUDA Fourier transform)
+# -lfftw3 -lfftw3f        : flags needed to perform Fast Fourier Transforms
+
 ########################################################################################################################################
 
 

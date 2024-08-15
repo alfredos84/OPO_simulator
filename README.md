@@ -15,7 +15,7 @@ git clone https://github.com/alfredos84/OPO_simulator.git
 ```
 Once the project was cloned, the user will find a parent folder `OPO` containing the folder `src`that in turn contains the header folder  `headers` with all the required `<files.h>`. The bash file `OPO.sh` used to compile and execute the package by passing several simulations parameters.
 
-### Bash file `src/OPO.sh`
+### Bash file `OPO.sh`
 
 The bash file is mainly used to massively perform simulations by passing the main file different parameters such as pump power, cavity detuning, etc. Before starting the user has to allow the system execute the bash file. To do that type in the terminal
 ```

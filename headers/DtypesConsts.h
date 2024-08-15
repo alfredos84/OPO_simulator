@@ -28,10 +28,8 @@ const complex_t Im = 1if; // imaginary number
 
 // Define global constants
 const uint SIZE   = 1 << 10;	// vector size
-const uint NZ     = 500000;		// size discretization
+const uint NZ     = 100;		// size discretization
 const uint NRT    = 10000;		// number of round trips    
-const uint BLKX   = 16;			// block dimensions for kernels
-
 
 // Define relevant physical constants
 const real_t PI   = std::acos(-1);		// pi
